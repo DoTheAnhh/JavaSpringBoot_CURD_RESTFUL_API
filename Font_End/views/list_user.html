@@ -1,0 +1,26 @@
+<table class="table container">
+    <thead>
+        <th>STT</th>
+        <th>ID</th>
+        <th>Mã</th>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Giới tính</th>
+        <th>Thao tác</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="u in listUser">
+            <td>{{$index + 1}}</td>
+            <td>{{u.id}}</td>
+            <td>{{u.ma}}</td>
+            <td>{{u.ten}}</td>
+            <td>{{u.tuoi}}</td>
+            <td>{{u.gioi_tinh == true ? "Nam" : "Nữ"}}</td>
+            <td>
+                <a class="btn btn-info" href="">Detail</a>
+                <a class="btn btn-warning" href="">Update</a>
+                <a class="btn btn-danger" href="">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
