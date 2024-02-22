@@ -9,9 +9,11 @@ window.ListUserController = function($scope, $http){
     $scope.getData();
 
     $scope.delete = function(id) {
-        const API = "http://localhost:3000/user/delete";
-        $http.delete(`${API}/${id}`).then(function(response){
+        const API = "http://localhost:8080/user/delete";
+        $http.delete(`${API}/${id}`).then(function(){
             window.location.href = "#!/user/all";
-        })
+            $scope.getData();
+        });
     }
+    
 }

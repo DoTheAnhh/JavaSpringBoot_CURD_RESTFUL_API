@@ -1,0 +1,22 @@
+<form class="container " name="myForm">
+    <div class="text-center fw-bold fs-1">User</div>
+    <div class="mt-3">
+        <label class="form-label fw-bold">Mã</label>
+        <input class="form-control" type="text" ng-model="inputValue.ma">
+    </div>
+    <div class="mt-3">
+        <label class="form-label fw-bold">Tên</label>
+        <input class="form-control" type="text" ng-model="inputValue.ten">
+    </div>
+    <div class="mt-3">
+        <label class="form-label fw-bold">Tuổi</label>
+        <input class="form-control" type="text" ng-model="inputValue.tuoi">
+    </div>
+    <div class="mt-3">
+        <label class="form-label fw-bold">Giới tính</label>
+        <input type="radio" ng-model="inputValue.gioi_tinh" value="true">Nam
+        <input type="radio" ng-model="inputValue.gioi_tinh" value="false">Nữ
+    </div>
+    <a class="btn btn-success mt-3" ng-click="add()">Add</a>
+    <a class="btn btn-danger mt-3" href="#!/user/all">Back</a>
+</form>

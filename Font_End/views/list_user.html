@@ -15,11 +15,11 @@
             <td>{{u.ma}}</td>
             <td>{{u.ten}}</td>
             <td>{{u.tuoi}}</td>
-            <td>{{u.gioi_tinh == true ? "Nam" : "Nữ"}}</td>
+            <td>{{u.gioi_tinh ? "Nam" : "Nữ"}}</td>
             <td>
-                <a class="btn btn-info" href="">Detail</a>
-                <a class="btn btn-warning" href="">Update</a>
-                <a class="btn btn-danger" href="">Delete</a>
+                <a class="btn btn-info" href="#!/user/detail/{{u.id}}">Detail</a>
+                <a class="btn btn-warning" href="#!/user/update/{{u.id}}">Update</a>
+                <a class="btn btn-danger" ng-click="delete(u.id)">Delete</a>
             </td>
         </tr>
     </tbody>

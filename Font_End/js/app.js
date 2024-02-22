@@ -6,18 +6,18 @@ myApp.config(function($routeProvider){
             templateUrl: "views/list_user.html",
             controller: ListUserController
         })
-        // .when('/add', {
-        //     templateUrl: "views/add.html",
-        //     controller: AddController
-        // })
-        // .when('/update/:id', {
-        //     templateUrl: "views/update.html",
-        //     controller: UpdateController
-        // })
-        // .when('/detail/:id', {
-        //     templateUrl: "views/detail.html",
-        //     controller: DetailController
-        // })
+        .when('/user/add', {
+            templateUrl: "views/add_user.html",
+            controller: AddUserController
+        })
+        .when('/user/update/:id', {
+            templateUrl: "views/update_user.html",
+            controller: UpdateUserController
+        })
+        .when('/user/detail/:id', {
+            templateUrl: "views/detail_user.html",
+            controller: DetailUserController
+        })
         .otherwise({
             redirectTo: '/user/all'
         })
