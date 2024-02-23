@@ -14,9 +14,8 @@
     </div>
     <div class="mt-3">
         <label class="form-label fw-bold">Giới tính</label>
-        <input type="radio" ng-model="inputValue.gioi_tinh" value="true" disabled>Nam
-        <input type="radio" ng-model="inputValue.gioi_tinh" value="false" disabled>Nữ
-
+        <input type="radio" ng-model="inputValue.gioi_tinh" ng-checked="inputValue.gioi_tinh == true" value="true" disabled>Nam
+        <input type="radio" ng-model="inputValue.gioi_tinh" ng-checked="inputValue.gioi_tinh == false" value="false" disabled>Nữ
     </div>
     <a class="btn btn-danger mt-3" href="#!/user/all">Back</a>
 </form>
